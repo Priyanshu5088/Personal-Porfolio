@@ -4,157 +4,303 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Priyanshu | Portfolio</title>
-
-    <!-- Google Font -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <!-- CSS File -->
-    <link rel="stylesheet" href="style.css" />
-    <!-- Tech Icons-->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
     />
+
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-
-    
     <!-- Navbar -->
     <div class="navbar" id="hero">
-      <div >
-        <h1 class="typing heading">Hi, I'm Priyanshu Singh Chouhan</h1>
-        <p class="typing subheading">AI + Full Stack Developer 💪🔥</p>
+      <div class="nav-header">
+        <div>
+          <h1 class="typing heading">Hi, I'm Priyanshu Singh Chouhan</h1>
+          <p class="typing subheading">AI + Full Stack Developer 💪🔥</p>
+        </div>
+        <button
+          class="mobile-menu-toggle"
+          onclick="toggleMobileMenu()"
+          aria-label="Toggle navigation menu"
+        >
+          <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </button>
       </div>
-      <div class="nav-links">
-        <div><a href="#">Home</a></div>
-        <div><a href="#about">About me</a></div>
-        <div><a href="#skills">Skills</a></div>
-        <div><a href="#projects">Projects</a></div>
-        <div><a href="#contact">Contact & Hire me</a></div>
-        <div><a href="/new/01CSS/Priyanshu Singh Chouhan (1).pdf" target="_blank">Resume</a></div>
+      <div class="nav-links" id="navLinks">
+        <div><a href="#" onclick="closeMobileMenu()">Home</a></div>
+        <div><a href="#about" onclick="closeMobileMenu()">About</a></div>
+        <div><a href="#skills" onclick="closeMobileMenu()">Skills</a></div>
+        <div><a href="#projects" onclick="closeMobileMenu()">Projects</a></div>
+        <div><a href="#contact" onclick="closeMobileMenu()">Contact</a></div>
+        <div>
+          <a href="#" target="_blank" onclick="closeMobileMenu()">Resume</a>
+        </div>
       </div>
     </div>
 
     <!-- About Me -->
     <div class="section" id="about">
-      <h1>About Me :</h1>
+      <h1>About Me</h1>
       <p>
-        👋 Hey, I'm Priyanshu
-        I'm a web developer who loves building clean, functional, and creative web apps. I enjoy turning ideas into interactive user experiences using JavaScript, React, Node.js, and modern tools.
-        Currently focused on learning full-stack development and integrating GenAI into real-world projects. Always experimenting, learning, and pushing to the next level.
+        👋 Hey, I'm Priyanshu! I'm a web developer who loves building clean,
+        functional, and creative web apps. I enjoy turning ideas into
+        interactive user experiences using JavaScript, React, Node.js, and
+        modern tools.
+        <br /><br />
+        Currently focused on learning full-stack development and integrating
+        GenAI into real-world projects. Always experimenting, learning, and
+        pushing to the next level.
       </p>
     </div>
-
 
     <!-- Skills -->
-<div class="section" id="skills">
-  <h1>Skills :</h1>
-  <div class="skills-container">
-    <div class="skill-box"><i class="devicon-html5-plain colored"></i> HTML</div>
-    <div class="skill-box"><i class="devicon-css3-plain colored"></i> CSS</div>
-    <div class="skill-box"><i class="devicon-javascript-plain colored"></i> JavaScript</div>
-    <div class="skill-box"><i class="devicon-nodejs-plain colored"></i> Node.js</div>
-    <div class="skill-box"><i class="devicon-express-original colored"></i> Express.js</div>
-    <div class="skill-box"><i class="devicon-react-original colored"></i> React</div>
-    <div class="skill-box"><i class="devicon-mongodb-plain colored"></i> MongoDB</div>
-    <div class="skill-box"><i class="devicon-github-original"></i> Github</div>
-    <div class="skill-box"><i class="devicon-git-plain"></i> Git</div>
-    <div class="skill-box"><i class="devicon-vscode-plain colored"></i>VS Code</div>
-    <div class="skill-box">
-      <img src="https://cdn.worldvectorlogo.com/logos/postman.svg" alt="Postman" class="bounce" height="32px" width="32px">
-       <span>Postman</span>
-    </div> 
-    <div class="skill-box">
-      <img src="https://cdn.worldvectorlogo.com/logos/tailwindcss.svg" alt="Postman" class="bounce" height="32px" width="32px">
-       <span>Tailwind CSS</span>
+    <div class="section" id="skills">
+      <h1>Skills</h1>
+      <div class="skills-container">
+        <div class="skill-box">
+          <i class="devicon-html5-plain colored"></i> <span>HTML</span>
+        </div>
+        <div class="skill-box">
+          <i class="devicon-css3-plain colored"></i> <span>CSS</span>
+        </div>
+        <div class="skill-box">
+          <i class="devicon-javascript-plain colored"></i>
+          <span>JavaScript</span>
+        </div>
+        <div class="skill-box">
+          <i class="devicon-nodejs-plain colored"></i> <span>Node.js</span>
+        </div>
+        <div class="skill-box">
+          <i class="devicon-express-original colored"></i>
+          <span>Express.js</span>
+        </div>
+        <div class="skill-box">
+          <i class="devicon-react-original colored"></i> <span>React</span>
+        </div>
+        <div class="skill-box">
+          <i class="devicon-mongodb-plain colored"></i> <span>MongoDB</span>
+        </div>
+        <div class="skill-box">
+          <i class="devicon-github-original"></i> <span>GitHub</span>
+        </div>
+        <div class="skill-box">
+          <i class="devicon-git-plain"></i> <span>Git</span>
+        </div>
+        <div class="skill-box">
+          <i class="devicon-vscode-plain colored"></i> <span>VS Code</span>
+        </div>
+        <div class="skill-box">
+          <img
+            src="https://cdn.worldvectorlogo.com/logos/postman.svg"
+            alt="Postman"
+            class="bounce"
+          />
+          <span>Postman</span>
+        </div>
+        <div class="skill-box">
+          <img
+            src="https://cdn.worldvectorlogo.com/logos/tailwindcss.svg"
+            alt="Tailwind"
+            class="bounce"
+          />
+          <span>Tailwind CSS</span>
+        </div>
+      </div>
     </div>
-  </div>
-</div>
-
-
 
     <!-- Projects -->
-<div class="section" id="projects">
-  <h1>Projects :</h1>
-  <div class="project-container">
-    <div class="project-box">
-      <div class="project-heading">
-        <img src="https://raw.githubusercontent.com/Priyanshu5088/Personal-Porfolio/refs/heads/main/images.jpeg" alt="" height="60px" width="60px">
-        <h3>Weather Application</h3>
-      </div>
-      <p>Displays Real-time weather using external APIs
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque deserunt aperiam voluptatibus blanditiis sed nemo quibusdam aspernatur amet nostrum suscipit nihil aliquid hic, placeat quidem illum perspiciatis odio repudiandae obcaecati.
-      </p>
-      <a href="link">Click Here</a>
-    </div>
-      <div class="project-box">
-      <div class="project-heading">
-        <img src="https://raw.githubusercontent.com/Priyanshu5088/Personal-Porfolio/refs/heads/main/png-clipart-spotify-for-os-x-el-capitan-spotify-logo-thumbnail.png" alt="" height="60px" width="60px">
-        <h3>Spotify Clone</h3>
-      </div>
-      <p>A music player Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea esse enim eos sequi reprehenderit quam labore voluptas harum mollitia, eaque magnam distinctio impedit doloremque aut repellat? Quidem doloribus nostrum numquam!</p>
-      <a href="link">Click Here</a>
-    </div>
+    <div class="section" id="projects">
+      <h1>Projects</h1>
+      <div class="project-container">
         <div class="project-box">
-      <div class="project-heading">
-        <img src="https://raw.githubusercontent.com/Priyanshu5088/Personal-Porfolio/refs/heads/main/8628925.png" alt="" height="60px" width="60px">
-        <h3>Ssense Clone</h3>
+          <div class="project-heading">
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/1163/1163661.png"
+              alt="Weather App"
+            />
+            <h3>Weather Application</h3>
+          </div>
+          <p>
+            A real-time weather application that displays current weather
+            conditions, forecasts, and location-based weather data using
+            external APIs. Built with modern JavaScript and responsive design
+            principles.
+          </p>
+          <a href="#">View Project</a>
+        </div>
+
+        <div class="project-box">
+          <div class="project-heading">
+            <img
+              src="https://storage.googleapis.com/pr-newsroom-wp/1/2018/11/Spotify_Logo_CMYK_Green.png"
+              alt="Spotify Clone"
+            />
+            <h3>Spotify Clone</h3>
+          </div>
+          <p>
+            A fully functional music player application that mimics Spotify's
+            interface and core features. Includes playlist management, audio
+            controls, and a sleek user interface built with React.
+          </p>
+          <a href="#">View Project</a>
+        </div>
+
+        <div class="project-box">
+          <div class="project-heading">
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/3081/3081559.png"
+              alt="E-commerce"
+            />
+            <h3>Ssense Clone</h3>
+          </div>
+          <p>
+            A modern e-commerce platform featuring product catalogs, shopping
+            cart functionality, user authentication, and payment integration.
+            Built with full-stack technologies and responsive design.
+          </p>
+          <a href="#">View Project</a>
+        </div>
       </div>
-      <p>An E-commerce platform
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, fuga quod nisi ipsam beatae in perspiciatis error earum dolore et itaque illum assumenda tempore inventore quisquam eius consectetur eligendi iure.
-      </p>
-      <a href="link">Click Here</a>
     </div>
-  </div>
-</div>
-
-
 
     <!-- Contact Form -->
     <div class="section" id="contact">
-      <h1>Contact Me :</h1>
-      <form>
-        <label for="fname">Name :</label><br />
-        <input type="text" id="fname" name="fname" placeholder="John Doe"/><br /><br />
+      <h1>Contact Me</h1>
+      <div class="contact-form">
+        <form>
+          <label for="fname">Name</label>
+          <input
+            type="text"
+            id="fname"
+            name="fname"
+            placeholder="John Doe"
+            required
+          />
 
-        <label for="mail">E-mail :</label><br />
-        <input type="email" name="mail" id="mail" placeholder="example@gmail.com"/><br /><br />
+          <label for="mail">Email</label>
+          <input
+            type="email"
+            name="mail"
+            id="mail"
+            placeholder="example@gmail.com"
+            required
+          />
 
-        <label for="phoneNo">Phone Number :</label><br />
-        <input type="number" name="phoneNo" id="phoneNo" /><br /><br />
+          <label for="phoneNo">Phone Number</label>
+          <input
+            type="number"
+            name="phoneNo"
+            id="phoneNo"
+            placeholder="+1234567890"
+          />
 
-        <input type="submit" value="Submit" />
-      </form>
+          <input type="submit" value="Send Message" />
+        </form>
+      </div>
     </div>
 
     <!-- Footer -->
     <div class="section" id="footer">
-      <h1>Hire me :</h1>
+      <h1>Connect With Me</h1>
       <div class="footer-box">
         <div class="footer-links">
-           <a href="https://github.com/Priyanshu5088" target="_blank"
-          ><img src="https://raw.githubusercontent.com/Priyanshu5088/Personal-Porfolio/refs/heads/main/github.webp" alt="" height="40px" width="40px">
-        </a>
-        </div>
-        <div  class="footer-links">
-           <a href="http://x.com/priyansuSinghX" target="_blank">
-          <img src="https://raw.githubusercontent.com/Priyanshu5088/Personal-Porfolio/refs/heads/main/new-2023-twitter-logo-x-icon-design_1017-45418.avif" alt="" height="40px" width="40px">
-        </a>
-        </div>
-        <div class="footer-links">
-            <a href="https://www.linkedin.com/feed/" target="_blank">
-          <img src="https://raw.githubusercontent.com/Priyanshu5088/Personal-Porfolio/refs/heads/main/linkedin-logo-linkedin-logo-transparent-linkedin-icon-transparent-free-free-png.webp" alt="" height="40px" width="40px">
-        </a>
+          <a
+            href="https://github.com/Priyanshu5088"
+            target="_blank"
+            rel="noopener"
+          >
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
+              alt="GitHub"
+            />
+          </a>
         </div>
         <div class="footer-links">
-            <a href="mailto:your.janneker9@gmail.com" target="_blank">
-          <img src="https://raw.githubusercontent.com/Priyanshu5088/Personal-Porfolio/refs/heads/main/%D0%BF%D0%B5%D1%87%D0%B0%D1%82%D1%8C-201003176.webp" alt="" height="40px" width="40px">
-        </a>
+          <a href="http://x.com/priyansuSinghX" target="_blank" rel="noopener">
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/5968/5968830.png"
+              alt="Twitter/X"
+            />
+          </a>
+        </div>
+        <div class="footer-links">
+          <a
+            href="https://www.linkedin.com/feed/"
+            target="_blank"
+            rel="noopener"
+          >
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/174/174857.png"
+              alt="LinkedIn"
+            />
+          </a>
+        </div>
+        <div class="footer-links">
+          <a
+            href="mailto:your.janneker9@gmail.com"
+            target="_blank"
+            rel="noopener"
+          >
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/732/732200.png"
+              alt="Email"
+            />
+          </a>
         </div>
       </div>
       <footer>© 2025 Priyanshu Singh Chouhan</footer>
     </div>
+
+    <script>
+      function toggleMobileMenu() {
+        const navLinks = document.getElementById("navLinks");
+        const hamburger = document.querySelector(".hamburger");
+
+        navLinks.classList.toggle("active");
+        hamburger.classList.toggle("active");
+      }
+
+      function closeMobileMenu() {
+        const navLinks = document.getElementById("navLinks");
+        const hamburger = document.querySelector(".hamburger");
+
+        navLinks.classList.remove("active");
+        hamburger.classList.remove("active");
+      }
+
+      // Close mobile menu when clicking outside
+      document.addEventListener("click", function (event) {
+        const navbar = document.querySelector(".navbar");
+        const navLinks = document.getElementById("navLinks");
+        const hamburger = document.querySelector(".hamburger");
+
+        if (
+          !navbar.contains(event.target) &&
+          navLinks.classList.contains("active")
+        ) {
+          navLinks.classList.remove("active");
+          hamburger.classList.remove("active");
+        }
+      });
+
+      window.addEventListener("resize", function () {
+        if (window.innerWidth > 767) {
+          const navLinks = document.getElementById("navLinks");
+          const hamburger = document.querySelector(".hamburger");
+
+          navLinks.classList.remove("active");
+          hamburger.classList.remove("active");
+        }
+      });
+    </script>
   </body>
 </html>
