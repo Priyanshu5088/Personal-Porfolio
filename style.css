@@ -618,6 +618,7 @@ a:hover {
 @media (max-width: 767px) {
   .mobile-menu-toggle {
     display: block;
+    flex-shrink: 0;
   }
 
   .navbar {
@@ -633,6 +634,14 @@ a:hover {
     width: 100%;
     flex-wrap: wrap;
   }
+
+   .nav-header h1 {
+    font-size: 1.2rem;
+    flex: 1 1 auto;
+    min-width: 0;
+    word-break: break-word;
+  }
+
 
   .nav-links {
     flex-direction: column;
