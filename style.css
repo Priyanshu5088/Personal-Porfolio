@@ -619,6 +619,7 @@ a:hover {
   .mobile-menu-toggle {
     display: block;
     flex-shrink: 0;
+    margin-left: auto;
   }
 
   .navbar {
@@ -632,14 +633,18 @@ a:hover {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
   }
 
+ 
    .nav-header h1 {
     font-size: 1.2rem;
-    flex: 1 1 auto;
-    min-width: 0;
-    word-break: break-word;
+    flex-grow: 1;
+    flex-shrink: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 80%; 
   }
 
 
